@@ -2,11 +2,35 @@
 #include "URI/BEGINNER.h"
 int main(int argc, char const *argv[]) {
 
-
     //Problem 1
         //simple();
 
     //problem 2
-        two_point();
+        //two_point();
+
+    //problem 3
+        //volume();
+
+    //problem 4
+        //Greatest();
+
+    //problem 5
+       // distance();
+
+    //problem 6
+        //fuel();
+
+    //problem 7
+        //Banknotes();
+
+    //problem 8
+        //time_conversion();
+
+    //problem 9
+       // Age_in_Days();
+
+    //problem 10
+        Banknotes_and_coin();
+
     return 0;
 }
