@@ -30,7 +30,10 @@ int main(int argc, char const *argv[]) {
        // Age_in_Days();
 
     //problem 10
-        Banknotes_and_coin();
-
+        //Banknotes_and_coin();
+    //Problem 11
+        //selection_test();
+    //problem 12
+        bhk_formula();
     return 0;
 }

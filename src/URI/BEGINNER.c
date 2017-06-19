@@ -168,12 +168,16 @@ void Age_in_Days(){
 /*====================#Banknotes and Coins#=======================*/
 
 void Banknotes_and_coin(){
-    int N;
+    int N=0;
+    float input;
     int copy ;
     int no_notes;
-    scanf("%d",&N);
-    copy = N;
-    printf("%d\n",N);
+
+    scanf("%f",&input);
+    N = (int) input;
+    printf( "INPUT %f\n",input);
+    input = input - N ;
+    printf("NOTAS:\n");
 
     no_notes = N / 100;
     printf("%d nota(s) de R$ 100,00\n",no_notes);
@@ -199,8 +203,66 @@ void Banknotes_and_coin(){
     printf("%d nota(s) de R$ 2,00\n",no_notes);
     N = N % 2;
 
+    printf("MOEDAS:\n");
+
     no_notes = N / 1;
     printf("%d nota(s) de R$ 1,00\n",no_notes);
     N = N % 1;
+
+    no_notes = input / 0.50;
+    printf("%d nota(s) de R$ 0.50\n",no_notes);
+    input = input - (no_notes * 0.50);
+
+    no_notes = input / 0.25;
+    printf("%d nota(s) de R$ 0.25\n",no_notes);
+    input = input - (no_notes * 0.25);
+
+    no_notes = input / 0.10;
+    printf("%d nota(s) de R$ 0.10\n",no_notes);
+    input = input - (no_notes * 0.10);
+
+    no_notes = input / 0.05;
+    printf("%d nota(s) de R$ 0.05\n",no_notes);
+    input = input - (no_notes * 0.05);
+
+    printf("Input: %f \n",input);
+    input = ceil(input*100);
+    no_notes = input / 1;
+    printf("Input: %f \n",input);
+    printf("%d nota(s) de R$ 0.01\n",no_notes);
+
+}
+
+
+/*============================#Selection Test 1#===================*/
+
+void selection_test(){
+
+    int A, B, C, D;
+    scanf("%d %d %d %d",&A, &B, &C, &D);
+    if ( B > C && D > A && (C+D) > (A+B)){
+        if( C > 0 && D > 0 && (A %2 == 0)){
+            printf("Valores aceitos\n");
+        }
+    } else{
+        printf("Valores nao aceitos\n");
+    }
+}
+
+
+void bhk_formula()
+{
+    double a,b,c,r1,r2,d;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    d=(pow(b,2)-(4*a*c));
+    r1=(-b+sqrt(d))/(2*a);
+    r2=(-b-sqrt(d))/(2*a);
+    if(a!=0 && d>0)
+    {
+        printf("R1 = %.5lf\nR2 = %.5lf\n",r1,r2);
+    }
+    else{
+        printf("Impossivel calcular\n");
+    }
 
 }

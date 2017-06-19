@@ -14,4 +14,7 @@ void Banknotes();
 void time_conversion();
 void Age_in_Days();
 void Banknotes_and_coin();
+void selection_test();
+void bhk_formula();
+
 #endif //UNTITLED_BEGINNER_H
