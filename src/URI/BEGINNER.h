@@ -16,5 +16,6 @@ void Age_in_Days();
 void Banknotes_and_coin();
 void selection_test();
 void bhk_formula();
+void snack();
 
 #endif //UNTITLED_BEGINNER_H

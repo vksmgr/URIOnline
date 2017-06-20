@@ -264,5 +264,52 @@ void bhk_formula()
     else{
         printf("Impossivel calcular\n");
     }
+}
 
+/*=========================Snack ===================*/
+
+struct Data{
+    int code;
+    char* specification;
+    float price;
+};
+
+void snack(){
+    struct Data p1, p2, p3, p4, p5;
+    p1.code = 1;
+    p1.specification = "Cachorro Quente";
+    p1.price = 4.00;
+
+    p2.code = 2;
+    p2.specification = "X-salada";
+    p2.price = 4.50;
+
+    p3.code = 3;
+    p3.specification = "X-Bacon";
+    p3.price = 5.00;
+
+    p4.code = 4;
+    p4.specification = "Torrada simples";
+    p4.price = 2.00;
+
+    p5.code = 5;
+    p5.specification = "Refrigerante";
+    p5.price = 1.50;
+
+    //====================
+    int x, y;
+    scanf("%d %d", &x, &y);
+
+    switch (x){
+        case 1: printf("Total: R$ %.2f\n",p1.price*y);
+                break;
+        case 2: printf("Total: R$ %.2f\n",p2.price*y);
+                break;
+        case 3: printf("Total: R$ %.2f\n",p3.price*y);
+            break;
+        case 4: printf("Total: R$ %.2f\n",p4.price*y);
+            break;
+        case 5: printf("Total: R$ %.2f\n",p5.price*y);
+            break;
+    }
 }

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "URI/BEGINNER.h"
+#include "URI/AD-HOC.h"
+
 int main(int argc, char const *argv[]) {
 
     //Problem 1
@@ -34,6 +36,14 @@ int main(int argc, char const *argv[]) {
     //Problem 11
         //selection_test();
     //problem 12
-        bhk_formula();
+        //bhk_formula();
+
+    //++++++++++++++++===============//AD-HOC
+
+    //carry_or_not();
+
+    // josephus();
+
+    snack();
     return 0;
 }
